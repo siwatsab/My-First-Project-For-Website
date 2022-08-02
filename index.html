@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+    <script>
+        function greeting(){
+            
+            let name=prompt("plase input your name: ");
+            window.alert('Hello ! '+name);
+            document.getElementById('demo').innerHTML = 'Hello ! '+name;
+        }
+        function changeToRed(){
+            document.getElementById('demo').style.color="red";
+            document.getElementById('demo').style.fontSize="30px";
+        }
+        function changeToDog(){
+            document.getElementById('pic').src="https://th.bing.com/th/id/R.29b31bf2336ae3ecbdbab51dfaeffef9?rik=1hHDiuSOW%2bY4DA&riu=http%3a%2f%2f1.bp.blogspot.com%2f_LDF9z4ZzZHo%2fTQALy4mKCdI%2fAAAAAAAAAKQ%2fn1wnnYyS-PA%2fs1600%2f1600DOG_14003.jpg&ehk=yFpLzAbSB18QlX9D0V9p0SKRdlWnyJM9ISk8G%2fdf3p4%3d&risl=&pid=ImgRaw&r=0";
+
+        }
+        function changeToCat(){
+            document.getElementById('pic').src="https://th.bing.com/th/id/R.d9806092934c1bad4795179f50fd962d?rik=NEZmP4lrih3jHg&pid=ImgRaw&r=0";
+            
+        }
+    </script>
+
 </head>
 <body>
-<img src="https://www.thairath.co.th/media/dFQROr7oWzulq5FZUECrpIfFpLemWAXFfUb1gfejFEVAyS5NahgEcNm7P3tsqxhEfSk.jpg">
-<img src="https://www.thairath.co.th/media/dFQROr7oWzulq5FZUECrpIfFpLemWAXFfUb1gfejFEVAyS5NahgEcNm7P3tsqxhEfSk.jpg">
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+
+<h2>My First JavaScript</h2>
+<img id="pic" src="https://th.bing.com/th/id/R.d9806092934c1bad4795179f50fd962d?rik=NEZmP4lrih3jHg&pid=ImgRaw&r=0"><br>
+<button type="button" 
+onclick="greeting()">
+Click me to greeing!! </button>
+<button type="button" 
+onclick="changeToRed()">
+Click me to chaneg color to red </button>
+<button type="button" 
+onclick="changeToDog()">
+Click me to chaneg picture to dog </button>
+<button type="button" 
+onclick="changeToCat()">
+Click me to chaneg picture to cat</button>
+<p id="demo"></p>
+
 
 </body>
-</html>
+</html> 
